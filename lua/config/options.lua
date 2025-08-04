@@ -19,3 +19,6 @@ vim.opt.guicursor = {
   "r-cr:hor20-blinkon500-blinkoff500",
   "o:hor40-blinkon500-blinkoff500",
 }
+
+-- Add column ruler at 80.
+vim.opt.colorcolumn = "80"

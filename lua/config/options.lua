@@ -4,7 +4,7 @@
 vim.opt.winbar = "%=%m %F"
 -- Set minimal number of screen lines above and below the cursor
 vim.opt.scrolloff = 10 -- Keeps at least 10 lines above/below cursor
-vim.opt.sidescrolloff = 99999 --Keep at least 5 col on the left.
+vim.opt.sidescrolloff = 200 --Keep at least 5 col on the left.
 
 -- Tab settings: expand tab to spaces, and set width to 4
 vim.opt.expandtab = true -- Convert tabs to spaces
@@ -22,3 +22,7 @@ vim.opt.guicursor = {
 
 -- Add column ruler at 80.
 vim.opt.colorcolumn = "80"
+
+-- Line number and relative number
+vim.opt.number = true
+vim.opt.relativenumber = true

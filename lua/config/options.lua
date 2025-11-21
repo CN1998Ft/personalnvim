@@ -26,3 +26,10 @@ vim.opt.colorcolumn = "80"
 -- Line number and relative number
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- Use powershell on windows
+if vim.fn.executable("pwsh") == 1 then
+  vim.o.shell = "pwsh.exe"
+else
+  vim.o.shell = "powershell"
+end

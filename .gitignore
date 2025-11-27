@@ -6,9 +6,4 @@ debug
 foo.*
 *.log
 data
-<<<<<<< HEAD
-lazy-lock.json
-lazyvim.json
-=======
 *json
->>>>>>> 8e38c36 (Nice one)

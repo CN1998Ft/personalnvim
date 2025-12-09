@@ -4,9 +4,9 @@
 vim.opt.winbar = "%=%m %F"
 -- Set minimal number of screen lines above and below the cursor
 vim.opt.scrolloff = 10 -- Keeps at least 10 lines above/below cursor
-vim.opt.sidescrolloff = 900 --Keep at least 5 col on the left.
+vim.opt.sidescrolloff = 200 --Keep at least 5 col on the left.
 
--- Tab settings: expand tab to spaces, and set width to 4
+-- Tab settings: expand tab to spaces, and set width to 2
 vim.opt.expandtab = true -- Convert tabs to spaces
 vim.opt.tabstop = 2 -- Number of spaces a tab counts for
 vim.opt.shiftwidth = 2 -- Number of spaces to use for autoindent
@@ -26,10 +26,3 @@ vim.opt.colorcolumn = "80"
 -- Line number and relative number
 vim.opt.number = true
 vim.opt.relativenumber = true
-
--- Use powershell on windows
-if vim.fn.executable("pwsh") == 1 then
-  vim.o.shell = "pwsh.exe"
-else
-  vim.o.shell = "powershell"
-end
